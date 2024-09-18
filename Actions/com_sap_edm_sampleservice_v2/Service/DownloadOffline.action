@@ -1,0 +1,10 @@
+{
+    "Service": "/MDKApp/Services/com_sap_edm_sampleservice_v2.service",
+    "DefiningRequests": [],
+    "_Type": "Action.Type.OfflineOData.Download",
+    "ActionResult": {
+        "_Name": "sync"
+    },
+    "OnFailure": "/MDKApp/Actions/com_sap_edm_sampleservice_v2/Service/SyncFailureMessage.action",
+    "OnSuccess": "/MDKApp/Rules/com_sap_edm_sampleservice_v2/ErrorArchive_CheckForSyncError.js"
+}

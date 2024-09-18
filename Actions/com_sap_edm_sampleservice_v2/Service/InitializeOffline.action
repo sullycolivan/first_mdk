@@ -1,0 +1,11 @@
+{
+    "Service": "/MDKApp/Services/com_sap_edm_sampleservice_v2.service",
+    "DefiningRequests": [],
+    "_Type": "Action.Type.ODataService.Initialize",
+    "ShowActivityIndicator": true,
+    "ActivityIndicatorText": "Downloading...",
+    "ActionResult": {
+        "_Name": "init"
+    },
+    "OnFailure": "/MDKApp/Actions/com_sap_edm_sampleservice_v2/Service/InitializeOfflineFailureMessage.action"
+}

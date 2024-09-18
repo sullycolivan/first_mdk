@@ -1,0 +1,2 @@
+Pass:
+	Generated bundle file /home/user/projects/MDKApp/.build/MDKApp/.build/uploadBundle.zip

@@ -1,0 +1,8 @@
+{
+    "Message": "Upload in progress...",
+    "CompletionMessage": "Sync completed",
+    "CompletionTimeout": 7,
+    "OnSuccess": "/MDKApp/Actions/com_sap_edm_sampleservice_v2/Service/UploadOffline.action",
+    "OnFailure": "/MDKApp/Actions/com_sap_edm_sampleservice_v2/Service/SyncFailureMessage.action",
+    "_Type": "Action.Type.ProgressBanner"
+}

@@ -1,0 +1,62 @@
+{
+	"Credential": "cf",
+	"Template": {
+		"Id": "@ext-mdkvsc-npm-dev/generator-mdk",
+		"Name": "CRUD",
+		"Version": "0.0.1"
+	},
+	"CF": {
+		"Target": "https://api.cf.us20.hana.ondemand.com",
+		"Organization": "603ca1af-c757-417e-bd4a-dfba687557de",
+		"Space": "6dc7fcb3-85d9-4fc6-9f17-26321dc96af2",
+		"Deploy": {
+			"Description": "",
+			"WebClient": {
+				"Runtime": "production",
+				"URL": "https://mdk-webclient-runtime.cfapps.us20.hana.ondemand.com/runtime/"
+			},
+			"Destination": [
+				{
+					"CF": "com.sap.edm.sampleservice.v2",
+					"MDK": "com.sap.edm.sampleservice.v2",
+					"URL": ""
+				},
+				{
+					"CF": "com.sap.edm.sampleservice.v4",
+					"MDK": "com.sap.edm.sampleservice.v4",
+					"URL": ""
+				}
+			],
+			"Name": "trc.MDKApp",
+			"Version": "1.0.0",
+			"AppRouter": "standalone",
+			"Auth": true
+		}
+	},
+	"MobileService": {
+		"Type": "standard",
+		"AdminAPI": "https://mobile-service-cockpit-api.cfapps.us20.hana.ondemand.com/cockpit/v1/org/603ca1af-c757-417e-bd4a-dfba687557de/space/6dc7fcb3-85d9-4fc6-9f17-26321dc96af2",
+		"AppId": "test1",
+		"Destination": [
+			"com.sap.edm.sampleservice.v4"
+		]
+	},
+	"Onboarding": {
+		"Schema": "sapmobilesvcs",
+		"TimeZone": "UTC",
+		"URL": "sapmobilesvcs://?AppId=test1&ClientId=57c476ea-c8e7-46a0-825e-2dc7b1c3e392&ServerUrl=https://ssam-locana-ssam-dev-test1.cfapps.us20.hana.ondemand.com&SapCloudPlatformEndpoint=https://ssam-locana-ssam-dev-test1.cfapps.us20.hana.ondemand.com&AuthorizationEndpointUrl=https://ssam-locana-ssam-dev-test1.cfapps.us20.hana.ondemand.com/oauth2/api/v1/authorize&RedirectUrl=https://ssam-locana-ssam-dev-test1.cfapps.us20.hana.ondemand.com&TokenUrl=https://ssam-locana-ssam-dev-test1.cfapps.us20.hana.ondemand.com/oauth2/api/v1/token&multiUser=false"
+	},
+	"LCAP": {
+		"FullName": "",
+		"Service": [],
+		"sourceTemplate": {
+			"id": "html5moduletemplates.basicSAPUI5ApplicationProjectModule",
+			"version": "1.40.12"
+		}
+	},
+	"Build": {
+		"SourceMap": true,
+		"TSTarget": "es6",
+		"WMF": true
+	}
+}
